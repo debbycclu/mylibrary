@@ -1,0 +1,18 @@
+# MySQL Database Configuration
+spring.datasource.url=jdbc:mysql://localhost:3306/springboot_db?createDatabaseIfNotExist=true
+spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+
+# Enable H2 Console
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+
+# JPA Configuration
+spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+# NYPL API Configuration
+nypl.api.key=your_nypl_api_key
+nypl.api.base-url=https://api.nypl.org/api/v1 
